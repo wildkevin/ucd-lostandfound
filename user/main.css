@@ -1,0 +1,87 @@
+body {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    background-color: #b3c1d1;
+  }
+  
+  header {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 50px;
+  }
+  
+  #logoimage {
+    width: 20%;
+    cursor: pointer;
+  }
+  
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-weight: bold;
+    justify-content: space-around;
+    min-height: 500px;
+  }
+  
+  choose {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #142a50;
+    margin: 30px;
+  }
+  
+  btn {
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  
+  #finder {
+    background-color: #daab27;
+  }
+  
+  #seeker {
+    background-color: #142a50;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    header {
+      margin: 20px;
+    }
+    #logoimage {
+      width: 25%;
+      height: 25%;
+    }
+    main {
+      min-height: 300px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header {
+      margin: 20px;
+    }
+    main {
+      flex-direction: column;
+      font-size: large;
+      min-height: 300px;
+    }
+    #logoimage {
+      width: 50%;
+      height: 50%;
+    }
+    choose {
+      align-self: unset;
+    }
+  }
+  

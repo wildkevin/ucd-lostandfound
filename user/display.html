@@ -1,0 +1,47 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UC Davis Lost&Found</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://web.cs.ucdavis.edu/~amenta/s20/reset.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/user/display.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logoimage"
+        src="https://cdn.glitch.com/6505f321-55c4-475c-9c95-d2ab5f4730af%2FLogo.png?v=1590361508436"
+      />
+    </header>
+    <main>
+      <mytitle>Showing results for</mytitle>
+      <div class="querypt">
+        <div id="query">
+          <div id="time">
+            <p id="start_time"></p>
+            <p id="end_time"></p>
+          </div>
+          <div id="search_cate"></div>
+          <div id="search_loc"></div>
+        </div>
+        <div id="editBtn">Edit Search</div>
+      </div>
+      <div id="displayList">
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="/user/display.js" defer></script>
+</html>

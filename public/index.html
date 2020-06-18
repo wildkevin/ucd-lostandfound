@@ -1,0 +1,74 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UC Davis Lost&Found</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/splash.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="left-half">
+          <img class="mobile-image"
+            id="library-mobile"
+            src="https://cdn.glitch.com/6876c104-24a3-4ad9-b7f1-df5a37423b36%2FShields.jpg?v=1590515085567"
+            alt="Library Image"
+          />
+          <img class="mobile-image"
+            id="library-desktop"
+            src="https://cdn.glitch.com/a157f3b7-6769-4f8f-8b06-5c7484ab51c3%2Flibrary_desktop.jpg?v=1590013157871"
+            alt="Library Image"
+          />
+        </div>
+        <div class="right-half">
+          <div id="logo">
+            <img
+              src="https://cdn.glitch.com/a157f3b7-6769-4f8f-8b06-5c7484ab51c3%2FLogo.png?v=1590013954687"
+              alt="Logo Image"
+            />
+          </div>
+
+          <!-- In the callback, you would hide the gSignInWrapper element on a
+  successful sign in -->
+          <div id="gSignInWrapper">
+            <a id="login_text" href="auth/google">
+              <button id="customBtn" class="customGPlusSignIn">
+                <span class="icon">
+                  <img
+                    src="https://cdn.glitch.com/a157f3b7-6769-4f8f-8b06-5c7484ab51c3%2Fgoogle.jpg?v=1590020834789"
+                    alt="Logo Image"
+                  />
+                </span>
+<!--                 TODO: ADD Login with your  UC Davis email account -->
+                <span id="buttonText">Login with Google</span>
+              </button>
+            </a>
+          </div>
+
+          <!-- <div class="g-signin2" data-onsuccess="onSignIn">"hu"</div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
