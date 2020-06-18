@@ -1,0 +1,291 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UC Davis Lost&Found</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://web.cs.ucdavis.edu/~amenta/s20/reset.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/user/form.css">
+  </head>
+  <!-- <div id="map"></div> -->
+  <body>
+    <header>
+      <img id = "logoimage" src = "https://cdn.glitch.com/6505f321-55c4-475c-9c95-d2ab5f4730af%2FLogo.png?v=1590361508436">
+    </header>
+    <main>
+        <mytitle>Input the found item</mytitle>
+        <info>
+            <div class ="infotitle">Date & Time <span class = "required">*</span></div>
+            <div>
+                <input type="date" id = "itemdate">
+                <input type="time" id = "itemtime">
+            </div>
+            <div class ="infotitle">Location <span class = "required">*</span></div>
+            <input type="text" id = "location" list = "loclist">
+            <datalist id = "loclist">
+              <option value="Academic Surge"></option>
+              <option value="Activities & Recreation Center (ARC)"></option>
+              <option value="Advanced Materials Research Laboratory"></option>
+              <option value="Aggie Surplus (Bargain Barn) & Custodial"></option>
+              <option value="Advanced Transportation Infrastructure Research Center"></option>
+              <option value="Agriculture Field Station"></option>
+              <option value="Agriculture Service Office"></option>
+              <option value="Animal Husbandry Beef Barn"></option>
+              <option value="Animal Husbandry Feed Scales"></option>
+              <option value="Animal Husbandry Sheep"></option>
+              <option value="Animal Resource Service V (AH Goat)"></option>
+              <option value="Animal Resources Service Headquarters"></option>
+              <option value="Animal Science Horse Barn"></option>
+              <option value="Animal Sciences Teaching Facility 1"></option>
+              <option value="Animal Sciences Teaching Facility 2"></option>
+              <option value="Ann E. Pitzer Center"></option>
+              <option value="Annual Fund Trailer"></option>
+              <option value="Aquaculture Facility Hatchery"></option>
+              <option value="Aquatic Biology & Environmental Science Bldg"></option>
+              <option value="Aquatic Weed Laboratory"></option>
+              <option value="Arboretum Headquarters (Valley Oak Cottage)"></option>
+              <option value="Arboretum Teaching Nursery"></option>
+              <option value="Art Annex"></option>
+              <option value="Art Building"></option>
+              <option value="Art Studio-Graduate Building"></option>
+              <option value="Asmundson Hall"></option>
+              <option value="Bainer Hall"></option>
+              <option value="Bike Barn"></option>
+              <option value="Bowley Plant Science Teaching Facility"></option>
+              <option value="Briggs Hall"></option>
+              <option value="California Hall"></option>
+              <option value="California Raptor Museum"></option>
+              <option value="Center for Companion Animal Health"></option>
+              <option value="Center for Comparative Medicine"></option>
+              <option value="Center for Equine Health"></option>
+              <option value="Center for Health & Environment Office & Laboratory"></option>
+              <option value="Center for Neuroscience"></option>
+              <option value="Center for Vectorborne Diseases, Laboratory"></option>
+              <option value="Center for Vectorborne Diseases, Main Office"></option>
+              <option value="Center for Vectorborne Diseases, Staff Offices"></option>
+              <option value="Chancellor's Residence"></option>
+              <option value="Chemistry"></option>
+              <option value="Chemistry Annex"></option>
+              <option value="Civil & Industrial Services"></option>
+              <option value="116 A Street"></option>
+              <option value="Conference Center & Welcome Center"></option>
+              <option value="Contained Research Facility"></option>
+              <option value="Cottonwood Cottage (Temporary Classroom 30)"></option>
+              <option value="Cowell Building"></option>
+              <option value="Cruess Hall"></option>
+              <option value="Dairy"></option>
+              <option value="Davis 501 Oak Ave"></option>
+              <option value="Design & Construction Management (DCM)"></option>
+              <option value="Dutton Hall"></option>
+              <option value="Earth and Physical Sciences Building"></option>
+              <option value="Earth & Planetary Sciences Shockwave Lab"></option>
+              <option value="East House"></option>
+              <option value="Educational Opportunity Program (EOP)"></option>
+              <option value="Eichhorn Family House"></option>
+              <option value="Elderberry Cottage"></option>
+              <option value="Enology Laboratory Building"></option>
+              <option value="Environmental Horticulture"></option>
+              <option value="Environmental Services Facility Headquarters"></option>
+              <option value="Equestrian Center Covered Arena"></option>
+              <option value="Everson Hall"></option>
+              <option value="Facilities Mechanical Operations"></option>
+              <option value="Facilities Services"></option>
+              <option value="Facilities Structural Trailer"></option>
+              <option value="Fire & Police Building"></option>
+              <option value="Fleet Services Central Garage Campus"></option>
+              <option value="FOA: 1050 Extension Center Drive"></option>
+              <option value="FPS Facility (Main Lab & Office)"></option>
+              <option value="Freeborn Hall"></option>
+              <option value="Gallagher Hall"></option>
+              <option value="Gateway Parking Structure"></option>
+              <option value="Genome & Biomedical Sciences Facility"></option>
+              <option value="Geotechnical Centrifuge"></option>
+              <option value="Germplasm Laboratory"></option>
+              <option value="Ghausi Hall"></option>
+              <option value="Giedt Hall"></option>
+              <option value="Gourley Clinical Teaching Center"></option>
+              <option value="Grounds"></option>
+              <option value="Music Annex"></option>
+              <option value="Guilbert House"></option>
+              <option value="Hangar"></option>
+              <option value="Hangar Office"></option>
+              <option value="Haring Hall"></option>
+              <option value="Harry H. Laidlaw Jr. Honey Bee Research Facility"></option>
+              <option value="Hart Hall"></option>
+              <option value="Heitman Staff Learning Center"></option>
+              <option value="Hickey Gym"></option>
+              <option value="Hoagland Annex"></option>
+              <option value="Hoagland Hall"></option>
+              <option value="Hopkins Building"></option>
+              <option value="Hopkins Svcs Complex Auxiliary"></option>
+              <option value="Hopkins Svcs Complex Receiving"></option>
+              <option value="Human and Community Development Administration"></option>
+              <option value="Human Resources Administration Building"></option>
+              <option value="Hunt Hall"></option>
+              <option value="Hutchison Child Development Center"></option>
+              <option value="Hutchison Hall"></option>
+              <option value="Hyatt Place"></option>
+              <option value="International Center"></option>
+              <option value="International House"></option>
+              <option value="Jackson Sustainable Winery"></option>
+              <option value="John A. Jungerman Hall (formerly Crocker Nuclear Lab)"></option>
+              <option value="Kemper Hall"></option>
+              <option value="Kerr Hall"></option>
+              <option value="King Hall"></option>
+              <option value="Kleiber Hall"></option>
+              <option value="Latitude Dining Commons"></option>
+              <option value="Life Sciences"></option>
+              <option value="Maddy Lab"></option>
+              <option value="Manetti Shrem Museum"></option>
+              <option value="Mann Laboratory"></option>
+              <option value="Mathematical Sciences Building"></option>
+              <option value="Meat Laboratory, Cole Facility Building C"></option>
+              <option value="Medical Sciences 1 B (Carlson Health Sciences Library)"></option>
+              <option value="Medical Sciences 1 C"></option>
+              <option value="Medical Sciences 1 D"></option>
+              <option value="Memorial Union"></option>
+              <option value="Meyer Hall"></option>
+              <option value="Mondavi Center for the Performing Arts"></option>
+              <option value="Mondavi Center for the Performing Arts - Administration"></option>
+              <option value="Mrak Hall"></option>
+              <option value="Music Building"></option>
+              <option value="Nelson Hall (University Club)"></option>
+              <option value="Neurosciences Building"></option>
+              <option value="Noel-Nordfelt Animal Science Goat Dairy and Creamery"></option>
+              <option value="North Hall"></option>
+              <option value="Olson Hall"></option>
+              <option value="Orchard House"></option>
+              <option value="Outdoor Adventures"></option>
+              <option value="Parsons Seed Certification Center"></option>
+              <option value="Pavilion at the ARC"></option>
+              <option value="Peter A. Rock Hall"></option>
+              <option value="Peter J. Shields Library"></option>
+              <option value="Pavilion Parking Structure"></option>
+              <option value="Physical Sciences & Engineering Library"></option>
+              <option value="Physics Building"></option>
+              <option value="Plant & Environmental Sciences"></option>
+              <option value="Plant Reproductive Biology Facility"></option>
+              <option value="Pomology Field House C"></option>
+              <option value="Poultry Headquarters"></option>
+              <option value="Pritchard VMTH"></option>
+              <option value="Putah Creek Lodge"></option>
+              <option value="Quad Parking Structure"></option>
+              <option value="Regan Central Commons"></option>
+              <option value="Reprographics"></option>
+              <option value="Robbins Hall"></option>
+              <option value="Robbins Hall Annex"></option>
+              <option value="Robert Mondavi Institute Brewery, Winery, and Food Pilot Facility"></option>
+              <option value="Robert Mondavi Institute - North"></option>
+              <option value="Robert Mondavi Institute - Sensory"></option>
+              <option value="Robert Mondavi Institute - South"></option>
+              <option value="Roessler Hall"></option>
+              <option value="Schaal Aquatic Center"></option>
+              <option value="Schalm Hall"></option>
+              <option value="School of Education Building"></option>
+              <option value="Sciences Lab Building"></option>
+              <option value="Sciences Lecture Hall"></option>
+              <option value="Scrub Oak Hall (Auditorium)"></option>
+              <option value="Scrubs Cafe"></option>
+              <option value="Segundo Dining Commons"></option>
+              <option value="Segundo Services Center"></option>
+              <option value="Silo"></option>
+              <option value="Silo South"></option>
+              <option value="Social Sciences & Humanities"></option>
+              <option value="Social Sciences Lecture Hall (1100)"></option>
+              <option value="South Hall"></option>
+              <option value="Sprocket Annex"></option>
+              <option value="Sprocket Building"></option>
+              <option value="Sproul Hall"></option>
+              <option value="Storer Hall"></option>
+              <option value="Student Community Center"></option>
+              <option value="Student Health & Wellness Center"></option>
+              <option value="Student Housing"></option>
+              <option value="Surge II"></option>
+              <option value="Surge IV (TB 200,TB 201,TB 202,TB 203)"></option>
+              <option value="Swine Teaching and Research Facility"></option>
+              <option value="TB 009"></option>
+              <option value="TB 16"></option>
+              <option value="TB 116"></option>
+              <option value="TB 117"></option>
+              <option value="TB 118"></option>
+              <option value="TB 119"></option>
+              <option value="TB 120"></option>
+              <option value="TB 123"></option>
+              <option value="TB 124"></option>
+              <option value="TB 140"></option>
+              <option value="TB 188"></option>
+              <option value="TB 189"></option>
+              <option value="TB 206"></option>
+              <option value="TB 207"></option>
+              <option value="Temporary Classroom 1"></option>
+              <option value="Temporary Classrooms 2 & 3"></option>
+              <option value="Tercero Services Center"></option>
+              <option value="The Barn"></option>
+              <option value="The Grove (Surge III)"></option>
+              <option value="Thermal Energy Storage"></option>
+              <option value="Thurman Laboratory"></option>
+              <option value="Toomey Weight Room"></option>
+              <option value="Transportation and Parking Services"></option>
+              <option value="Trinchero Family Estates Building"></option>
+              <option value="Tupper Hall"></option>
+              <option value="UC Davis Health Stadium East"></option>
+              <option value="UC Davis Health Stadium North"></option>
+              <option value="UC Davis Health Stadium North"></option>
+              <option value="UC Davis Health Stadium West"></option>
+              <option value="Unitrans Maintenance Facility"></option>
+              <option value="University Extension Building"></option>
+              <option value="University House & Annex"></option>
+              <option value="University Services Building"></option>
+              <option value="Urban Forestry"></option>
+              <option value="Utilities Headquarters"></option>
+              <option value="Valley Hall"></option>
+              <option value="Veihmeyer Hall"></option>
+              <option value="Vet Med 3A"></option>
+              <option value="Vet Med 3A - MPT"></option>
+              <option value="Vet Med 3B"></option>
+              <option value="Vet Med Equine Athletic Performance Lab"></option>
+              <option value="Vet Med Laboratory Facility Large Animal Holding"></option>
+              <option value="Veterinary Medicine 2"></option>
+              <option value="Veterinary Medicine Student Services and Administrative Center"></option>
+              <option value="Veterinary Genetics Lab"></option>
+              <option value="Viticulture Relocation C"></option>
+              <option value="Voorhies Hall"></option>
+              <option value="Walker Hall"></option>
+              <option value="Walnut Cottage"></option>
+              <option value="Walter A. Buehler Alumni Center"></option>
+              <option value="Water Science & Engineering Hydraulic L2"></option>
+              <option value="Watershed Science Facility"></option>
+              <option value="Wellman Hall"></option>
+              <option value="West House"></option>
+              <option value="Western Center for Agricultural Equipment"></option>
+              <option value="Western Human Nutrition Research Center (WHNRC)"></option>
+              <option value="Wickson Hall"></option>
+              <option value="Willow Cottage"></option>
+              <option value="Wright Hall"></option>
+              <option value="Wyatt Deck"></option>
+              <option value="Wyatt Pavilion"></option>
+              <option value="Young Hall"></option>
+              <option value="Young Hall Annex"></option>              
+            </datalist>
+            <div id="map"></div>
+            <span class = "required">* is required</span>
+            <span id = "myBtn">Submit</span>
+        </info>
+        <mytitle>Or search for existing requests</mytitle>
+        <div id = "searchpt">
+            <img id = "searchlogo" src = "https://cdn.glitch.com/6505f321-55c4-475c-9c95-d2ab5f4730af%2Fsearch-solid.svg?v=1590361531003">
+        </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="/user/info2.js" defer></script>
+  <script src="/user/map.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3vow3CuPlLuLHw9mv5qcLuesCMxRyTBs&callback=initMap&language=en">
+  </script>
+</html>

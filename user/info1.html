@@ -1,0 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UC Davis Lost&Found</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://web.cs.ucdavis.edu/~amenta/s20/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700&display=swap" rel="stylesheet">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/user/form.css">
+  </head>
+  <body>
+    <header>
+      <img id = "logoimage" src = "https://cdn.glitch.com/6505f321-55c4-475c-9c95-d2ab5f4730af%2FLogo.png?v=1590361508436">
+    </header>
+    <main>
+        <mytitle>Input the found item</mytitle>
+        <info>
+            <div class ="infotitle">Title <span class = "required">*</span></div>
+            <input type="text" id = "title">
+            <div class ="infotitle">Category <span class = "required">*</span></div>
+            <input list = "opt" id = "category">
+            <datalist id = "opt">
+              <option value="Electronics"></option>
+              <option value="Collectibles & Art"></option>
+              <option value="Fashion"></option>
+              <option value="Home & Garden"></option>
+              <option value="Sporting Goods"></option>
+              <option value="Health & Beauty"></option>
+              <option value="Toys & Hobbies"></option>
+              <option value="Books"></option>
+              <option value="Business & Industrial"></option>
+              <option value="Others"></option>
+            </datalist>
+            <div class ="infotitle">Description <span class = "required">*</span></div>
+            <textarea id = "description"></textarea>
+            <div class ="infotitle">Attach a photo (optional)</div>
+            <div id = "control">
+                <label id = "chooseBtn" for = "fileChooser">Choose File</label>
+                <input type="file" id="fileChooser" accept="image/png, .jpeg, .jpg, image/gif">
+                <p id = "filenm"></p>
+            </div>
+            <span class = "required">* is required</span>
+            <span id = "myBtn">Next</span>
+        </info>
+        <mytitle>Or search for existing requests</mytitle>
+        <div id = "searchpt">
+            <img id = "searchlogo" src = "https://cdn.glitch.com/6505f321-55c4-475c-9c95-d2ab5f4730af%2Fsearch-solid.svg?v=1590361531003">
+        </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="/user/info1.js" defer></script>
+</html>

@@ -1,0 +1,122 @@
+html,
+body,
+section {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.left-half {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.right-half {
+  display: flex;
+  flex: 1;
+  background-color: #365c85;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#library-mobile {
+  display: flex;
+  flex: 1;
+  display: none !important;
+}
+#library-desktop {
+  display: flex;
+  flex: 1;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#customBtn {
+  display: flex;
+  color: #444;
+  width: 190px;
+  border-radius: 10px;
+  margin: 20px;
+  border: thin solid #888;
+  white-space: nowrap;
+  background: white;
+  justify-content: center;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+
+span.icon {
+  /*   background: red; */
+  display: flex;
+  width: 41px;
+  height: 42px;
+}
+img {
+  max-width: 100%;
+}
+
+span#buttonText {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  color: #142a50;
+  align-self: center;
+  font-family: "Montserrat";
+}
+
+#gSignInWrapper {
+  display: flex;
+  justify-content: center;
+}
+#login_text {
+  text-decoration: none;
+}
+
+.customGPlusSignIn {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-half {
+    height: 50%;
+  }
+
+  .right-half {
+    height: 50%;
+  }
+  #library-desktop {
+    display: none !important;
+  }
+  #library-mobile {
+
+    display: flex !important;
+}
+}

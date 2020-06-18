@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    background-color: #feebb1;
+    align-items: center;
+    min-height: 1000px;
+}
+
+header {
+    align-self: flex-end;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+#logoimage {
+    width: 50%;
+    cursor: pointer;
+  }  
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 700px;
+  width: 90%;
+  height: 100%;
+}
+
+mytitle {
+    color: #142a50;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+info {
+    background-color: white;
+    height: 80%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 40px;
+    font-size: large;
+}
+
+input[type = text], input[type = date], input[type = time], input[list = "opt"], textarea {
+    width: 100%;
+    background-color: #e5e5e5;
+    border: none;
+    padding: 10px;
+    font-size: medium;
+}
+
+.required {
+  color: red;
+  font-size: small;
+}
+
+/* info1.html */
+#description {
+    height: 150px;
+}
+
+#control {
+    display: flex;
+}
+
+input#fileChooser {
+  display: none;
+}
+
+#filenm {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: small;
+}
+
+#chooseBtn {
+    background-color: #e5e5e5;
+    width: 10%;
+    padding: 8px;
+    color: #142a50;
+    cursor: pointer;
+}
+/* done */
+
+/* search.html */
+#startdate {
+    width: 30%;
+}
+
+#starttime {
+    width: 18.5%;
+}
+
+#enddate {
+    width: 30%;
+}
+
+#endtime {
+    width: 18.5%;
+}
+/* done */
+
+#itemdate {
+    width: 40%;
+}
+
+#itemtime {
+    width: 20%;
+}
+
+#myBtn {
+    background-color: #daab27;
+    color: white;
+    align-self: flex-end;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    width: 18%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.infotitle {
+    color: #142a50;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#searchpt {
+    background-color: white;
+    min-height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#searchlogo {
+    width: 3%;
+    transform: scaleX(-1);
+    margin-right: 5px;
+}
+
+footer {
+    flex-grow: 0;
+    height: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+  html, body {
+    height: 120%;
+    min-height: 800px;
+  }
+  header {
+    margin: 20px;
+  }
+  #logoimage {
+    height: 100%;
+  }
+  main {
+      width: 80%;
+  }
+  #chooseBtn {
+      width: 17%;
+  }
+  #searchlogo {
+      width: 4%;
+  }
+  #startdate {
+    width: 29%;
+  }
+  #starttime {
+      width: 17%;
+  }
+  #enddate {
+      width: 29%;
+  }
+  #endtime {
+      width: 17%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    height: 120%;
+  }
+  header {
+    margin: 20px;
+  }
+  #logoimage {
+    height: 100%;
+  }
+  main {
+    width: 90%;
+  }
+  info {
+    padding: 20px;
+  }
+  #chooseBtn {
+    width: 37%;
+  }
+  #control {
+    flex-direction: column;
+    }
+  #myBtn {
+      width: 30%;
+  }
+  #searchlogo {
+      width: 8%;
+  }
+  #startdate {
+    width: 27%;
+  }
+  #starttime {
+      width: 16%;
+  }
+  #enddate {
+      width: 27%;
+  }
+  #endtime {
+      width: 16%;
+  }
+}
